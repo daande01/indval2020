@@ -16,6 +16,7 @@ public class Var2 {
 
 		System.out.println(summa);
 
+
 	}
 
 
