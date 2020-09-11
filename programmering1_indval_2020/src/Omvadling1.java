@@ -6,7 +6,8 @@ public class Omvadling1 {
 
 		String tal = JOptionPane.showInputDialog("ange ett tal som skall kvadreras");
 
-		double inttal = Double.parseDouble(tal);
+		//double dtal = Double.parseDouble(tal);
+		int inttal= Integer.parseInt(tal);
 
 		double svar =inttal * inttal;
 
