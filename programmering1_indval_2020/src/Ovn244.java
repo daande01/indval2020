@@ -12,7 +12,6 @@ public class Ovn244 {
 
 			JOptionPane.showMessageDialog(null, c);
 
-
 	}
 
 
