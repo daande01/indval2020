@@ -21,12 +21,18 @@ public class Grafik1 extends JFrame implements ActionListener {
 		setSize(300, 300);
 		add(b1);
 		add(l1);
-		b1.addActionListener(this);
+		b1.addActionListener(e->{
+
+
+		});
 
 	}
 
 	public static void main(String[] args) {
-		new Grafik1();
+		Grafik1 a=new Grafik1();
+
+		Math.random()
+
 	}
 
 	@Override
