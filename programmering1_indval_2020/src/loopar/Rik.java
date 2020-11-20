@@ -10,7 +10,7 @@ public class Rik {
 
 
 		while (kapital < 1000000) {
-
+			System.out.println(lön);
 			lön = lön * 2;
 			dag++;
 			kapital=kapital+lön;
