@@ -13,6 +13,8 @@ public class exmpel96 {
 		inTid(tid);
 
 		utTid(tid);
+		
+		System.out.println(snabbastTid(tid));
 
 	}
 
@@ -49,6 +51,27 @@ public class exmpel96 {
 		System.out.println();
 
 	}
+	
+	public static double snabbastTid(double [] tid) {
+	
+		
+		double min = Double.MAX_VALUE;
+		
+		for (int i = 0; i < tid.length; i++) {
+			
+			if ( min > tid[i]  ) {
+				
+				min = tid[i];
+				
+			}
+		}
+		
+		return min;
+		
+	
+	}
+	
+	
 
 
 }
