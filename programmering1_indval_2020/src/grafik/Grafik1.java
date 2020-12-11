@@ -31,7 +31,7 @@ public class Grafik1 extends JFrame implements ActionListener {
 	public static void main(String[] args) {
 		Grafik1 a=new Grafik1();
 
-		Math.random()
+		Math.random();
 
 	}
 
