@@ -45,7 +45,7 @@ public class Hiss {
 
 	int h1v=h1.getVåning();
 
-	System.out.println(h1v);
+	System.out.println("v:"+h1v);
 	}
 
 
