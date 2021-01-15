@@ -33,8 +33,7 @@ public class Bil {
 		System.out.println(färg+" "+effekt+" "+hastighet);
 	}
 
-
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
 		Bil b1 = new Bil("blue",23,37); // referensvariabel b1 av typen bil och lagrat en bil i en
 		Bil b2 = new Bil();
