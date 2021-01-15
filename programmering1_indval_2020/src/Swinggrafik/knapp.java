@@ -9,7 +9,6 @@ public class knapp extends JFrame {
 
 	JLabel l1 = new JLabel("hej"); //
 
-
 	public knapp(){  // konstruktor
 
 		setLayout(new FlowLayout());
@@ -17,19 +16,14 @@ public class knapp extends JFrame {
 		add(l1);
 		setVisible(true);
 
-
 	}
-
 
 
 	public static void main(String[] args) {
 
-
 		new knapp();
 		new knapp();
 
 	}
-
-
 
 }
