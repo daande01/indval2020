@@ -8,38 +8,44 @@ import javax.swing.JLabel;
 
 public class knapp extends JFrame {
 
-	JLabel l1 = new JLabel("hej"); //
-	JButton b1=new JButton("knapp");
-	// skapa ytterligare en knapp
-	private int tal =0;
+	JButton b1 = new JButton("+");
+	JButton b2 = new JButton("-");
+	private int tal = 0;
+	JLabel l1 = new JLabel("" + tal);
 
-	public knapp(){  // konstruktor
+	public knapp() { // konstruktor
 
 		setLayout(new FlowLayout());
-		setSize(400,400);
+		setSize(400, 400);
 		add(l1);
 		add(b1);
-		// adda en knapp till
+		add(b2);
 		setVisible(true);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 
+		b1.addActionListener(e -> {
+			tal++;
+			l1.setText("" + tal);
+			// skriv om denna lyssnare, skall öka värdet på instansvariabeln tal samt lägga
+			// in tal i jlabeln l1 med metoden setText(""+tal)
 
-	b1.addActionListener(e->{
+		});
+		b2.addActionListener(e -> {
+			tal--;
+			l1.setText("" + tal);
 
-		l1.setText(""+tal);
-		// skriv om denna lyssnare, skall öka värdet på instansvariabeln tal samt lägga in tal i jlabeln l1 med metoden setText(""+tal)
+		});
 
-	});
-	// skapa en lyssnare till för "knapp2"
-	// Denna lyssnare skall minska värdet på instansvariabeln tal samt lägga in tal i jlabeln l1 med metoden setText()
+		// skapa en lyssnare till för "knapp2"
+		// Denna lyssnare skall minska värdet på instansvariabeln tal samt lägga in tal
+		// i jlabeln l1 med metoden setText()
 
 	}
-
 
 	public static void main(String[] args) {
 
 		new knapp();
-
+		new knapp();
 
 	}
 
