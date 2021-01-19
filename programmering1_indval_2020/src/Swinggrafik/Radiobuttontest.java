@@ -10,12 +10,11 @@ import javax.swing.JRadioButton;
 
 public class Radiobuttontest extends JFrame {
 
-	JLabel l1 =new JLabel("hund");
-	JLabel l2 =new JLabel("katt");
-	JLabel l3 =new JLabel("häst");
+	JLabel l1 = new JLabel("hund");
+	JLabel l2 = new JLabel("katt");
+	JLabel l3 = new JLabel("häst");
 
-	JButton send=new JButton("send");
-
+	JButton send = new JButton("send");
 
 	JRadioButton b1 = new JRadioButton();
 	JRadioButton b2 = new JRadioButton();
@@ -40,12 +39,11 @@ public class Radiobuttontest extends JFrame {
 		add(send);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-		send.addActionListener(e->{
+		send.addActionListener(e -> {
 
 			if (b1.isSelected()) {
 				send.setText("hund");
-			}
-			else if (b2.isSelected()) {
+			} else if (b2.isSelected()) {
 				send.setText("katt");
 			}
 			if (b3.isSelected()) {
