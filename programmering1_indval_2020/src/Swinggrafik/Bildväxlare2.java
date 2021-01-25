@@ -7,15 +7,15 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-public class Bildväxlare extends JFrame {
+public class Bildväxlare2 extends JFrame {
 
 	private JLabel bild= new JLabel(new ImageIcon("bilder//cat-1107450_640.jpg"));
 
 	private JButton change =new JButton("växlabild");
 
-	int i =0;
 
-	public Bildväxlare() {
+
+	public Bildväxlare2() {
 
 		setLayout(new FlowLayout());
 		setVisible(true);
@@ -28,15 +28,19 @@ public class Bildväxlare extends JFrame {
 		change.addActionListener(e->{
 
 
-			if(i==0) {
+
+
+
+			if (bild.getIcon().toString().equals("bilder//cat-1107450_640.jpg")) {
 
 				bild.setIcon(new ImageIcon("bilder//cat-3431519_640.jpg"));
-				i=1;
-			}else if(i==1) {
+
+			}else {
 
 				bild.setIcon(new ImageIcon("bilder//cat-1107450_640.jpg"));
-				i=0;
 			}
+
+
 
 		});
 
@@ -46,7 +50,7 @@ public class Bildväxlare extends JFrame {
 
 	public static void main(String[] args) {
 
-		new Bildväxlare();
+		new Bildväxlare2();
 	}
 
 
