@@ -10,14 +10,14 @@ import javax.swing.Timer;
 
 public class BollTest extends JComponent {
 
-	private int x=0;
-	private int y=0;
+	private int x = 0;
+	private int y = 0;
 
 	public BollTest() {
 
-		setPreferredSize(new Dimension(500,500));
+		setPreferredSize(new Dimension(500, 500));
 
-		Timer t=new Timer(40, e->{
+		Timer t = new Timer(40, e -> {
 
 			update();
 
@@ -27,9 +27,9 @@ public class BollTest extends JComponent {
 	}
 
 	public void update() {
-		x=x+2;
-		y=y+2;
-	repaint();
+		x = x + 2;
+		y = y + 2;
+		repaint();
 
 	}
 
@@ -41,12 +41,9 @@ public class BollTest extends JComponent {
 		g.fillOval(x, y, 50, 50);
 	}
 
-
-
-
 	public static void main(String[] args) {
 
-		JFrame f= new JFrame();
+		JFrame f = new JFrame();
 		f.setLayout(new FlowLayout());
 		f.setVisible(true);
 		f.setContentPane(new BollTest());
