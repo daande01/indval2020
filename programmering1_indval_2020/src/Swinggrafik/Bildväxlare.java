@@ -9,7 +9,7 @@ import javax.swing.JLabel;
 
 public class Bildväxlare extends JFrame {
 
-	private JLabel bild= new JLabel(new ImageIcon("bilder//cat-1107450_640.jpg"));
+	private JLabel bild= new JLabel(new ImageIcon("bilder//bild1.jpg"));
 
 	private JButton change =new JButton("växlabild");
 
