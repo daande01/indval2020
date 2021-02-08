@@ -21,8 +21,6 @@ public class repetition4 {
 
 	public static int produkt(int a, int b) {
 
-
-
 		return a*b;
 
 	}
