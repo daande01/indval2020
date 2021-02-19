@@ -13,14 +13,13 @@ public class BollTest extends JComponent {
 
 	private int x = 0;
 	private int y = 0;
-	private int xv=2;
-	private int yv=3;
+	private int xv = 2;
+	private int yv = 3;
 	private Color c;
 
+	public BollTest(Color cc) {
 
-	public BollTest(Color cc ) {
-
-		c=cc;
+		c = cc;
 
 		setPreferredSize(new Dimension(500, 500));
 
@@ -28,7 +27,7 @@ public class BollTest extends JComponent {
 
 			update();
 
-			System.out.println(this.getSize().width);
+
 
 		});
 		t.start();
@@ -36,29 +35,29 @@ public class BollTest extends JComponent {
 	}
 
 	public void update() {
-		x =x+xv;
-		y +=yv;
+		x = x + xv;
+		y += yv;
 
-		if(y>=(getSize().height-50)) {
+		if (y >= (getSize().height - 50)) {
 
-			yv=yv*-1;
-
-		}
-		if(x>=(getSize().width-50)) {
-
-			xv*=-1;
-
-		}if(y<=0) {
-
-			yv*=-1;
-
-		}if(x<=0) {
-
-			xv*=-1;
+			yv = yv * -1;
 
 		}
+		if (x >= (getSize().width - 50)) {
 
+			xv *= -1;
 
+		}
+		if (y <= 0) {
+
+			yv *= -1;
+
+		}
+		if (x <= 0) {
+
+			xv *= -1;
+
+		}
 
 		repaint();
 
@@ -69,7 +68,7 @@ public class BollTest extends JComponent {
 		// TODO Auto-generated method stub
 
 		super.paintComponent(g);
-		g.setColor(   c    );
+		g.setColor(c);
 		g.fillOval(x, y, 50, 50);
 	}
 
