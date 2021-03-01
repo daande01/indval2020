@@ -29,8 +29,6 @@ public class BollTest extends JComponent implements KeyListener {
 
 			update();
 
-
-
 		});
 		t.start();
 
@@ -89,17 +87,13 @@ public class BollTest extends JComponent implements KeyListener {
 	@Override
 	public void keyPressed(KeyEvent e) {
 
+		int tangent = e.getKeyCode();
 
+		if (tangent == KeyEvent.VK_UP) {
 
-		 int tangent= e.getKeyCode();
+			y = y - 5;
 
-		 if(tangent== KeyEvent.VK_UP) {
-
-
-			 y=y-5;
-
-		 }
-
+		}
 
 	}
 
@@ -114,7 +108,6 @@ public class BollTest extends JComponent implements KeyListener {
 		// TODO Auto-generated method stub
 
 	}
-
 
 	@Override
 	public boolean isFocusTraversable() {
