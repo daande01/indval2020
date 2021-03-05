@@ -28,6 +28,15 @@ public class Kombo extends JComponent {
 		g.setColor(new Color(124, 243, 213));
 		g.fillRect(x, 200, 50, 50);
 	}
+
+	public void move() {
+
+		x=400;
+		repaint();
+
+	}
+
+
 	public static void main(String[] args) {
 
 
@@ -39,8 +48,10 @@ public class Kombo extends JComponent {
 
 		b.addActionListener(e->{
 
-			KomboObjekt.x=400;
-			KomboObjekt.repaint();
+			//KomboObjekt.x=400;
+			//KomboObjekt.repaint();
+
+			KomboObjekt.move();
 
 		});
 
