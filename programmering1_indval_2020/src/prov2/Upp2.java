@@ -23,7 +23,7 @@ public class Upp2 {
 
 	}
 
-	private static String särskriv(String string, String string2) {
+	public static String särskriv(String string, String string2) {
 
 		String s = string+string2;
 
