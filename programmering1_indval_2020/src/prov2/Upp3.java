@@ -10,15 +10,17 @@ public class Upp3 {
 
 		String stringVärde = JOptionPane.showInputDialog("angemaskin värde vid inköp");
 
-		int maskinVärde = Integer.parseInt(stringVärde);
+		double maskinVärde = Integer.parseInt(stringVärde);
 
-		// skapa loop som avslutas när maskinvärde <1000 while
+		while (maskinVärde > 1000) {
 
-				// minska maskinvärde med 20%
-				// år ++
-		//
+			maskinVärde = maskinVärde * 0.8;
+			år = år + 1;
 
-		// skriv ut antal år
+		}
+
+
+		System.out.println(maskinVärde+" år"+år);
 
 	}
 
