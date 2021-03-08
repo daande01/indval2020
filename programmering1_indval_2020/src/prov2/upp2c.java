@@ -1,4 +1,4 @@
-package pong;
+package prov2;
 
 public class upp2c {
 
